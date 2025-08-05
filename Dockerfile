@@ -27,7 +27,6 @@ RUN pnpm prune --production
 FROM base AS runner
 
 # 创建用户和组
-RUN addgroup --system --gid 1000 nodejs
 RUN adduser --system --uid 1000 hono
 
 # 创建日志目录
